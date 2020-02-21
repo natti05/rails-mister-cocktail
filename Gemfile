@@ -31,9 +31,9 @@ gem 'jbuilder', '~> 2.5'
 
 # added
 gem 'autoprefixer-rails'
+gem 'faker'
 gem 'font-awesome-sass', '~> 5.6.1'
 gem 'simple_form'
-
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
