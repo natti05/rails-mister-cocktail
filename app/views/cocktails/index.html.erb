@@ -1,0 +1,27 @@
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/background.png);">
+  <div class="container_banner">
+    <h1> <strong>Cocktails universe!</strong>!</h1>
+    <p>You are the bartender, Create the most amaizing drink ever!</p>
+    <%= link_to "New cocktail ", new_cocktail_path(@cocktail), class: "btn btn-flat" %>
+  </div>
+</div>
+
+
+
+<% @cocktails.each do |cocktail| %>
+    <div class="card-drink">
+      <div class="card-drink-infos">
+        <div>
+          <h2><%= link_to cocktail.name, cocktail_path(cocktail) %></h2>
+          <% cocktail.doses.each do |dose| %>
+            <p><%= dose.ingredient.name %></p>
+            <p><%= dose.description %></p>
+          <% end %>
+        </div>
+      </div>
+    </div>
+<% end %>
+
+
+
+

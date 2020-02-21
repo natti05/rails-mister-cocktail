@@ -1,0 +1,14 @@
+
+
+  <div class="container">
+  <%= link_to cocktails_path do %>
+  <i class="fas fa-arrow-left fa-2x"></i>
+  <% end %>
+    <h1>Name it!</h1>
+    <%= simple_form_for @cocktail do |f| %>
+    <%= f.input :name %>
+    <%= f.button :submit %>
+    <% end %>
+</div>
+
+

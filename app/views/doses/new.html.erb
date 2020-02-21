@@ -1,0 +1,18 @@
+
+
+<div class="container">
+  <%= link_to cocktails_path do %>
+  <i class="fas fa-arrow-left fa-2x"></i>
+  <% end %>
+  <h1>Your new recipe!</h1>
+  <%= simple_form_for [@cocktail, @dose] do |f| %>
+  <%= f.association :ingredient, class: "form-control" %>
+  <%= f.input :description, class: "form-control" %>
+  <%= f.button :submit, class: "btn"%>
+<% end %>
+
+</div>
+
+
+
+
