@@ -31,6 +31,7 @@ gem 'jbuilder', '~> 2.5'
 
 # added
 gem 'autoprefixer-rails'
+gem 'cloudinary', '~> 1.12.0'
 gem 'dotenv-rails', groups: [:development, :test]
 gem 'faker'
 gem 'font-awesome-sass', '~> 5.6.1'
