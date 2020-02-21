@@ -1,4 +1,4 @@
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%= cl_image_path @cocktail.photo.key, height: 300, width: 400, crop: :fill %>')">
+<div class="banner">
   <div class="container_banner">
     <h1> <strong>Cocktails universe!</strong>!</h1>
     <p>You are the bartender, Create the most amazing drink ever!</p>
@@ -6,26 +6,14 @@
   </div>
 </div>
 
-
-<% @cocktails.each do |cocktail| %>
-    <div class="card-drink">
-      <div class="card-drink-infos">
-        <div>
-          <h2><%= link_to cocktail.name, cocktail_path(cocktail) %></h2>
-          <% cocktail.doses.each do |dose| %>
-            <p><%= dose.ingredient.name %></p>
-            <p><%= dose.description %></p>
-          <% end %>
-        </div>
-      </div>
-    </div>
-<% end %>
-<%= cl_image_tag("THE_IMAGE_ID_FROM_LIBRARY",
-      width: 400, height: 300, crop: :fill) %>
-
-<!-- for face detection -->
-<%= cl_image_tag("IMAGE_WITH_FACE_ID",
-      width: 150, height: 150, crop: :thumb, gravity: :face) %>
-
+<div class="card-category" >
+    <% @cocktails.each do |cocktail| %>
+        <h2><%= link_to cocktail.name, cocktail_path(cocktail) %></h2>
+        <% cocktail.doses.each do |dose| %>
+          <p><%= dose.ingredient.name %></p>
+          <p><%= dose.description %></p>
+        <% end %>
+    <% end %>
+</div>
 
 
