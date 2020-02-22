@@ -9,7 +9,7 @@ class DosesController < ApplicationController
     @dose = Dose.new(set_params)
     @dose.cocktail = @cocktail
     if @dose.save
-      redirect_to cocktails_path(@cocktails)
+      redirect_to cocktail_path(@cocktail)
     else
       render :new
     end
