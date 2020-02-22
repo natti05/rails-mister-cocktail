@@ -1,15 +1,28 @@
-
-
-  <div class="container">
-  <%= link_to cocktails_path do %>
-  <i class="fas fa-arrow-left fa-2x"></i>
-  <% end %>
-    <h1>Name it!</h1>
-    <%= simple_form_for @cocktail do |f| %>
-    <%= f.input :name %>
-    <%= f.input :photo, as: :file %>
-    <%= f.button :submit %>
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+<%= link_to "amazing universe of drinks", cocktails_path, class: "navbar-brand" %>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <%= link_to "New cocktail", new_cocktail_path(@cocktail), class: "nav-link" %>
+      </li>
+        </div>
+    </ul>
+  </div>
+</div>
+<div class="container">
+  <div class="card_links d-flex justify-content-end"><%= link_to cocktails_path do %>
+    <i class="fas fa-arrow-left fa-2x"></i>
     <% end %>
+  </div>
+      <h1>Name it!</h1>
+      <%= simple_form_for @cocktail do |f| %>
+      <%= f.input :name %>
+      <%= f.input :photo, as: :file, class: "button" %>
+      <%= f.button :submit, class: "button" %>
+      <% end %>
 </div>
 
 

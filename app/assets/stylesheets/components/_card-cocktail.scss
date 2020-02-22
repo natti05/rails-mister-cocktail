@@ -1,14 +1,36 @@
 .card-category{
-  background-size: cover;
-  background-position: center;
-  height: 180px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-size: 24px;
-  font-weight: bold;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  border-radius: 5px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 8px;
+margin: 16px;
+padding: 16px;
+width: 280px;
+height: 280px;
+box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  li{
+  list-style: none;
+  }
+  a{
+  color: #3f3f3f;
+  text-decoration: none;
+  }
+ }
+.card_links{
+ i{
+color: #3f3f3f;
+height: 50px;
+  }
+}
+.card_form img{
+  border-radius: 4px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+}
+.card_info{
+width: 40%;
+height: 50%;
+margin: 9px 0 0 85px;
 }

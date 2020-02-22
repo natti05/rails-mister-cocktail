@@ -12,5 +12,4 @@ drink['drinks'].each do |hash|
   INGREDIENT_NAME = Ingredient.create!(name: hash['strIngredient1'])
 end
 
-
 puts "finished"

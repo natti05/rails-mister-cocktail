@@ -1,0 +1,24 @@
+.container {
+  margin-top: 5px;
+  padding: 32px;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  width: 580px;
+  height: 430px;
+}
+.container_show {
+  margin-top: 5px;
+  padding: 16px;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  border-radius: 4px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 550px;
+  height: 70%;
+  h1{
+  color: #3f3f3f;
+  }
+}
+
