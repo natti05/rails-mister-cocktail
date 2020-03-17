@@ -42,7 +42,7 @@ margin: 0 0 -35px 20px;
 .cards {
   margin: 16px;
   display: inline-grid;
-  grid-template-columns: 360px 360px 360px;
+  grid-template-columns: 340px 340px 340px 340px;
   grid-gap: 10px 10px;
   flex-grow: 1;
 }
@@ -55,6 +55,10 @@ margin: 0 0 -35px 20px;
 }
 
 @media(max-width: 768px) {
+  .banner h1{
+    font-size: 32px;
+    margin-bottom: 32px;
+  }
   .cards {
     display: grid;
     grid-template-columns: 1fr;
