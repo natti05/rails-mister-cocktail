@@ -15,15 +15,17 @@
 <div class="banner">
   <div class="container_banner">
     <h1> <strong>Cocktails universe!</strong>!</h1>
-    <p>You are the bartender, Create the most amazing drink ever!</p>
+    <p>You are the bartender, <br> Create the most amazing drink ever!</p>
   </div>
 </div>
-<div class="container_card d-flex flex-wrap">
-  <% @cocktails.each do |cocktail| %>
-    <div class="card-category"  style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path cocktail.photo.key, height: 300, width: 400, crop: :fill %>')" >
-      <h2><%= link_to cocktail.name, cocktail_path(cocktail) %></h2>
-    </div>
-  <% end %>
+<div class="container-cards">
+  <div class="cards">
+      <% @cocktails.each do |cocktail| %>
+        <div class="card-category"  style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path cocktail.photo.key, height: 400, width: 400, crop: :fill %>')" >
+          <p><%= link_to cocktail.name, cocktail_path(cocktail) %></p>
+        </div>
+      <% end %>
+  </div>
 </div>
 
 
