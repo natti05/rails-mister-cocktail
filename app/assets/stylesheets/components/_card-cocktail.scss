@@ -41,9 +41,10 @@ margin: 0 0 -35px 20px;
 // index page
 .cards {
   margin: 16px;
-  display: inline-grid;
-  grid-template-columns: 340px 340px 340px 340px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 10px 10px;
+  -webkit-box-flex: 1;
   flex-grow: 1;
 }
 
