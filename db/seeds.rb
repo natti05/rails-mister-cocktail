@@ -2,7 +2,7 @@
 # require 'JSON'
 puts "destroy INGREDIENT"
 Ingredient.destroy_all
-Cocktail.destroy_all
+# Cocktail.destroy_all
 puts "INGREDIENT destroyed"
 # url = 'https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list'
 # drinks = open(url).read
