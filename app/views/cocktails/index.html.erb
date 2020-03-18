@@ -1,17 +1,3 @@
-<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-<%= link_to "amazing universe of drinks", cocktails_path, class: "navbar-brand" %>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <%= link_to "New cocktail", new_cocktail_path(@cocktail), class: "nav-link" %>
-      </li>
-        </div>
-    </ul>
-  </div>
-</div>
 <div class="banner">
   <div class="container_banner">
     <h1>Cocktails universe</h1>
@@ -22,7 +8,7 @@
   <div class="cards">
       <% @cocktails.each do |cocktail| %>
         <% if cocktail.photo.attached? %>
-          <div class="card-category"  style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path cocktail.photo.key, height: 400, width: 400, crop: :fill %>')" >
+          <div class="card-category"  style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path cocktail.photo.key, height: 400, width: 400, crop: :scale %>')" >
             <h3><%= link_to cocktail.name, cocktail_path(cocktail) %></h3>
           </div>
         <% end %>

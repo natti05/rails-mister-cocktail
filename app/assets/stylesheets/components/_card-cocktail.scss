@@ -18,13 +18,7 @@ color: #3f3f3f;
 height: 50px;
   }
 }
-.card_form img{
-  border-radius: 4px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 500px;
-}
+
 .card_info{
   p{
   width: auto;
@@ -34,8 +28,7 @@ height: 50px;
     margin: 8px;
   }
 width: 40%;
-height: 50%;
-margin: 0 0 -35px 20px;
+margin: 27px 0 -35px 20px;
 }
 
 // index page
@@ -67,8 +60,37 @@ margin: 0 0 -35px 20px;
       height: 100vh;
   }
 }
+// card show page
+.cards-show {
+  margin: 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px 10px;
+  -webkit-box-flex: 1;
+  flex-grow: 1;
 
+}
 
+@media(max-width: 992px) {
+  .cards-show {
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 360px 360px;
+
+  }
+}
+
+@media(max-width: 768px) {
+  .banner h1{
+    font-size: 32px;
+    margin-bottom: 32px;
+  }
+  .cards-show {
+    display: grid;
+    grid-template-columns: 1fr;
+    flex-grow: 1;
+      height: 100vh;
+  }
+}
 
 
 
